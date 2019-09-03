@@ -29,7 +29,7 @@ public class JobFieldData<T extends JobField> {
         allFields.add(item);
     }
 
-    T findByValue(String value) {
+    public T findByValue(String value) {
         for (T item : allFields) {
             if (item.contains(value))
                 return item;
